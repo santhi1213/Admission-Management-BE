@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/edumerge';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://santhiraju32_db_user:X26B4qYuIYwMvhrV@cluster0.pccqwjo.mongodb.net/?appName=Cluster0';
 
 mongoose.connect(MONGODB_URI)
   .then(async () => {
